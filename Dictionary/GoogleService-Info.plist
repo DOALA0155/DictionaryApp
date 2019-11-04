@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>747984087566-s7m6b7j9o25aiquuiv28kqcqaal29nc6.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.747984087566-s7m6b7j9o25aiquuiv28kqcqaal29nc6</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBOFNHOVerJbX0ghTl8-NZrBmqC_i8SBB0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>747984087566</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>jp.katsuyama.Dictionary</string>
+	<key>PROJECT_ID</key>
+	<string>dictionary-e721a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>dictionary-e721a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:747984087566:ios:9cd11bd581fe1645a6aa5f</string>
+	<key>DATABASE_URL</key>
+	<string>https://dictionary-e721a.firebaseio.com</string>
+</dict>
+</plist>
