@@ -71,6 +71,10 @@ class DictionaryViewController: UIViewController, UITableViewDelegate, UITableVi
             
             DictionaryWordViewController.wordName = wordData[0]
             DictionaryWordViewController.wordExplanation = wordData[1]
+        }else if segue.identifier == "toPostView"{
+            let PostViewController = segue.destination as! PostViewController
+            PostViewController.dictionaryName = dictionaryName
+            PostViewController.dictiobnaryWords = dictionaryWord
         }
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

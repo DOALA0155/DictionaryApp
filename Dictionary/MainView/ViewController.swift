@@ -8,6 +8,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     var dictionary: Dictionary<String, Dictionary<String, String>> = [:]
     @IBOutlet weak var dictionaryList: UITableView!
     var me: AppUser!
+    var auth: Auth!
     var database: Firestore!
     var searchResult: [String]!
     var dictionaries: Array<String> = []
@@ -15,6 +16,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        auth = Auth.auth()
         self.navigationItem.hidesBackButton = true
         database = Firestore.firestore()
         dictionarySearchBar.delegate = self
@@ -27,6 +29,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        me = AppUser(data: ["userId": auth.currentUser!.uid])
         database.collection(me.userId).getDocuments{ (snapshot, error) in if error == nil, let snapshot = snapshot{
             for document in snapshot.documents{
                 let data = document.data()
